@@ -1,0 +1,20 @@
+name: RAMChecker
+version: 1.1.0-beta
+main: com.notchwlmc.RAMChecker
+api-version: 1.21
+description: 内存监控与自动重启插件，支持自动更新
+author: notchwlmc
+
+commands:
+  rc:
+    description: 查看服务器内存与TPS，管理自动监控和更新
+    usage: /rc <autocheck|update>
+    permission: ramchecker.use
+
+permissions:
+  ramchecker.use:
+    description: 允许使用 /rc 命令
+    default: op
+  ramchecker.update:
+    description: 允许接收更新通知
+    default: op

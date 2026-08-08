@@ -1,0 +1,13 @@
+# 内存监控与自动重启配置
+memory-check:
+  enabled: true                    # 是否启用自动监控
+  threshold-mb: 1700               # 触发重启的内存阈值（MB）
+  check-interval: 30               # 检测间隔（秒）
+  save-delay: 5                    # 保存后等待秒数再重启
+  restart-command: "restart"       # 重启插件命令
+
+update:
+  enabled: true                    # 启用自动更新
+  url: "https://gist.githubusercontent.com/Notchwlmc/2601bfe7c5c8dcee0aca94c1ab163e86/raw/112d4fcb2a40bbb2dc833ebf295f92a5761f6d0e/update.json"
+  interval-hours: 24
+  download-folder: "update"
